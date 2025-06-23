@@ -1,6 +1,6 @@
 const express = require('express');
 const emailRoutes = require('./routes/emailRoutes');
-const eventRoutes = require('./routes/eventRoutes');
+// const eventRoutes = require('./routes/eventRoutes');
 const cors = require('cors');
 const app = express();
 
@@ -24,7 +24,7 @@ app.use((req,res,next)=>{
 // Mount email routes
 app.use('/', emailRoutes);
 // Mount event routes
-app.use('/api', eventRoutes);
+// app.use('/api', eventRoutes);
 
 // Start the server
 const PORT = process.env.PORT || 3000;
